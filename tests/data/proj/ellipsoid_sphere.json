@@ -1,0 +1,10 @@
+{
+  "$schema": "foo",
+  "type": "Ellipsoid",
+  "name": "Sphere",
+  "radius": 6371000,
+  "id": {
+    "authority": "EPSG",
+    "code": 7035
+  }
+}

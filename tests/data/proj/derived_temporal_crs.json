@@ -1,0 +1,52 @@
+{
+  "$schema": "foo",
+  "type": "DerivedTemporalCRS",
+  "name": "Derived TemporalCRS",
+  "base_crs": {
+    "type": "TemporalCRS",
+    "name": "Temporal CRS",
+    "datum": {
+      "name": "Gregorian calendar",
+      "calendar": "proleptic Gregorian",
+      "time_origin": "0000-01-01"
+    },
+    "coordinate_system": {
+      "subtype": "TemporalDateTime",
+      "axis": [
+        {
+          "name": "unknown temporal",
+          "abbreviation": "",
+          "direction": "future",
+          "unit": {
+            "type": "TimeUnit",
+            "name": "unknown",
+            "conversion_factor": 1
+          }
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "name": "unnamed",
+    "method": {
+      "name": "PROJ unimplemented"
+    },
+    "parameters": [
+      {
+        "name": "foo",
+        "value": 1,
+        "unit": "metre"
+      }
+    ]
+  },
+  "coordinate_system": {
+    "subtype": "TemporalDateTime",
+    "axis": [
+      {
+        "name": "Time",
+        "abbreviation": "T",
+        "direction": "future"
+      }
+    ]
+  }
+}

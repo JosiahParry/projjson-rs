@@ -1,0 +1,20 @@
+{
+  "$schema": "foo",
+  "type": "VerticalCRS",
+  "name": "EGM2008 height",
+  "datum": {
+    "type": "VerticalReferenceFrame",
+    "name": "EGM2008 geoid"
+  },
+  "coordinate_system": {
+    "subtype": "vertical",
+    "axis": [
+      {
+        "name": "Gravity-related height",
+        "abbreviation": "H",
+        "direction": "up",
+        "unit": "metre"
+      }
+    ]
+  }
+}

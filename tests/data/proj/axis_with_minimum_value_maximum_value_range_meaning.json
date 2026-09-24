@@ -1,0 +1,11 @@
+{
+  "$schema": "foo",
+  "type": "Axis",
+  "name": "Longitude",
+  "abbreviation": "lon",
+  "direction": "east",
+  "unit": "degree",
+  "minimum_value": 0,
+  "maximum_value": 360,
+  "range_meaning": "wraparound"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "foo",
+  "type": "VerticalCRS",
+  "name": "CGVD2013",
+  "datum": {
+    "type": "VerticalReferenceFrame",
+    "name": "Canadian Geodetic Vertical Datum of 2013"
+  },
+  "coordinate_system": {
+    "subtype": "vertical",
+    "axis": [
+      {
+        "name": "Gravity-related height",
+        "abbreviation": "H",
+        "direction": "up",
+        "unit": "metre"
+      }
+    ]
+  },
+  "geoid_model": {
+    "name": "CGG2013",
+    "id": {
+      "authority": "EPSG",
+      "code": 6648
+    }
+  }
+}

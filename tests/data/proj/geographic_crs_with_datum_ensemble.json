@@ -1,0 +1,46 @@
+{
+  "$schema": "foo",
+  "type": "GeographicCRS",
+  "name": "WGS 84",
+  "datum_ensemble": {
+    "name": "WGS 84 ensemble",
+    "members": [
+      {
+        "name": "World Geodetic System 1984 (Transit)"
+      },
+      {
+        "name": "World Geodetic System 1984 (G730)"
+      },
+      {
+        "name": "Some unknown ensemble with unknown id",
+        "id": {
+          "authority": "UNKNOWN",
+          "code": 1234
+        }
+      }
+    ],
+    "ellipsoid": {
+      "name": "WGS 84",
+      "semi_major_axis": 6378137,
+      "inverse_flattening": 298.257223563
+    },
+    "accuracy": "2"
+  },
+  "coordinate_system": {
+    "subtype": "ellipsoidal",
+    "axis": [
+      {
+        "name": "Latitude",
+        "abbreviation": "lat",
+        "direction": "north",
+        "unit": "degree"
+      },
+      {
+        "name": "Longitude",
+        "abbreviation": "lon",
+        "direction": "east",
+        "unit": "degree"
+      }
+    ]
+  }
+}

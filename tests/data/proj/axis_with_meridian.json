@@ -1,0 +1,11 @@
+{
+  "$schema": "foo",
+  "type": "Axis",
+  "name": "Northing",
+  "abbreviation": "N",
+  "direction": "south",
+  "meridian": {
+    "longitude": 180
+  },
+  "unit": "metre"
+}

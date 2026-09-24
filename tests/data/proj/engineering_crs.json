@@ -1,0 +1,25 @@
+{
+  "$schema": "foo",
+  "type": "EngineeringCRS",
+  "name": "Engineering CRS",
+  "datum": {
+    "name": "Engineering datum"
+  },
+  "coordinate_system": {
+    "subtype": "Cartesian",
+    "axis": [
+      {
+        "name": "Easting",
+        "abbreviation": "E",
+        "direction": "east",
+        "unit": "metre"
+      },
+      {
+        "name": "Northing",
+        "abbreviation": "N",
+        "direction": "north",
+        "unit": "metre"
+      }
+    ]
+  }
+}

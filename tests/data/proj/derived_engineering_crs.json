@@ -1,0 +1,59 @@
+{
+  "$schema": "foo",
+  "type": "DerivedEngineeringCRS",
+  "name": "Derived EngineeringCRS",
+  "base_crs": {
+    "type": "EngineeringCRS",
+    "name": "Engineering CRS",
+    "datum": {
+      "name": "Engineering datum"
+    },
+    "coordinate_system": {
+      "subtype": "Cartesian",
+      "axis": [
+        {
+          "name": "Easting",
+          "abbreviation": "E",
+          "direction": "east",
+          "unit": "metre"
+        },
+        {
+          "name": "Northing",
+          "abbreviation": "N",
+          "direction": "north",
+          "unit": "metre"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "name": "unnamed",
+    "method": {
+      "name": "PROJ unimplemented"
+    },
+    "parameters": [
+      {
+        "name": "foo",
+        "value": 1,
+        "unit": "metre"
+      }
+    ]
+  },
+  "coordinate_system": {
+    "subtype": "Cartesian",
+    "axis": [
+      {
+        "name": "Easting",
+        "abbreviation": "E",
+        "direction": "east",
+        "unit": "metre"
+      },
+      {
+        "name": "Northing",
+        "abbreviation": "N",
+        "direction": "north",
+        "unit": "metre"
+      }
+    ]
+  }
+}

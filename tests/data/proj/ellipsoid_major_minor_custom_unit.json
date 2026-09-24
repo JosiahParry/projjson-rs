@@ -1,0 +1,14 @@
+{
+  "$schema": "foo",
+  "type": "Ellipsoid",
+  "name": "foo",
+  "semi_major_axis": 6378137,
+  "semi_minor_axis": {
+    "value": 6370000,
+    "unit": {
+      "type": "LinearUnit",
+      "name": "my_unit",
+      "conversion_factor": 2
+    }
+  }
+}

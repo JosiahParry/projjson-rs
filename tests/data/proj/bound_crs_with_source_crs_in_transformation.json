@@ -1,0 +1,276 @@
+{
+  "$schema": "foo",
+  "type": "BoundCRS",
+  "source_crs": {
+    "type": "DerivedGeographicCRS",
+    "name": "CH1903+ with height offset",
+    "base_crs": {
+      "type": "GeographicCRS",
+      "name": "CH1903+",
+      "datum": {
+        "type": "GeodeticReferenceFrame",
+        "name": "CH1903+",
+        "ellipsoid": {
+          "name": "Bessel 1841",
+          "semi_major_axis": 6377397.155,
+          "inverse_flattening": 299.1528128
+        }
+      },
+      "coordinate_system": {
+        "subtype": "ellipsoidal",
+        "axis": [
+          {
+            "name": "Latitude",
+            "abbreviation": "lat",
+            "direction": "north",
+            "unit": "degree"
+          },
+          {
+            "name": "Longitude",
+            "abbreviation": "lon",
+            "direction": "east",
+            "unit": "degree"
+          },
+          {
+            "name": "Ellipsoidal height",
+            "abbreviation": "h",
+            "direction": "up",
+            "unit": "metre"
+          }
+        ]
+      }
+    },
+    "conversion": {
+      "name": "Ellipsoidal to gravity related height",
+      "method": {
+        "name": "Geographic3D offsets",
+        "id": {
+          "authority": "EPSG",
+          "code": 9660
+        }
+      },
+      "parameters": [
+        {
+          "name": "Latitude offset",
+          "value": 0,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8601
+          }
+        },
+        {
+          "name": "Longitude offset",
+          "value": 0,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8602
+          }
+        },
+        {
+          "name": "Vertical Offset",
+          "value": 10,
+          "unit": "metre",
+          "id": {
+            "authority": "EPSG",
+            "code": 8603
+          }
+        }
+      ]
+    },
+    "coordinate_system": {
+      "subtype": "ellipsoidal",
+      "axis": [
+        {
+          "name": "Geodetic latitude",
+          "abbreviation": "Lat",
+          "direction": "north",
+          "unit": "degree"
+        },
+        {
+          "name": "Geodetic longitude",
+          "abbreviation": "Lon",
+          "direction": "east",
+          "unit": "degree"
+        },
+        {
+          "name": "Ellipsoidal height",
+          "abbreviation": "h",
+          "direction": "up",
+          "unit": "metre"
+        }
+      ]
+    }
+  },
+  "target_crs": {
+    "type": "GeographicCRS",
+    "name": "WGS 84",
+    "datum_ensemble": {
+      "name": "World Geodetic System 1984 ensemble",
+      "members": [
+        {
+          "name": "World Geodetic System 1984 (Transit)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1166
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G730)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1152
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G873)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1153
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G1150)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1154
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G1674)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1155
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G1762)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1156
+          }
+        },
+        {
+          "name": "World Geodetic System 1984 (G2139)",
+          "id": {
+            "authority": "EPSG",
+            "code": 1309
+          }
+        }
+      ],
+      "ellipsoid": {
+        "name": "WGS 84",
+        "semi_major_axis": 6378137,
+        "inverse_flattening": 298.257223563
+      },
+      "accuracy": "2.0"
+    },
+    "coordinate_system": {
+      "subtype": "ellipsoidal",
+      "axis": [
+        {
+          "name": "Geodetic latitude",
+          "abbreviation": "Lat",
+          "direction": "north",
+          "unit": "degree"
+        },
+        {
+          "name": "Geodetic longitude",
+          "abbreviation": "Lon",
+          "direction": "east",
+          "unit": "degree"
+        },
+        {
+          "name": "Ellipsoidal height",
+          "abbreviation": "h",
+          "direction": "up",
+          "unit": "metre"
+        }
+      ]
+    },
+    "id": {
+      "authority": "EPSG",
+      "code": 4979
+    }
+  },
+  "transformation": {
+    "name": "CH1903+ to WGS 84 (1)",
+    "source_crs": {
+      "type": "GeographicCRS",
+      "name": "CH1903+",
+      "datum": {
+        "type": "GeodeticReferenceFrame",
+        "name": "CH1903+",
+        "ellipsoid": {
+          "name": "Bessel 1841",
+          "semi_major_axis": 6377397.155,
+          "inverse_flattening": 299.1528128
+        }
+      },
+      "coordinate_system": {
+        "subtype": "ellipsoidal",
+        "axis": [
+          {
+            "name": "Latitude",
+            "abbreviation": "lat",
+            "direction": "north",
+            "unit": "degree"
+          },
+          {
+            "name": "Longitude",
+            "abbreviation": "lon",
+            "direction": "east",
+            "unit": "degree"
+          },
+          {
+            "name": "Ellipsoidal height",
+            "abbreviation": "h",
+            "direction": "up",
+            "unit": "metre"
+          }
+        ]
+      }
+    },
+    "method": {
+      "name": "Geocentric translations (geog2D domain)",
+      "id": {
+        "authority": "EPSG",
+        "code": 9603
+      }
+    },
+    "parameters": [
+      {
+        "name": "X-axis translation",
+        "value": 674.374,
+        "unit": "metre",
+        "id": {
+          "authority": "EPSG",
+          "code": 8605
+        }
+      },
+      {
+        "name": "Y-axis translation",
+        "value": 15.056,
+        "unit": "metre",
+        "id": {
+          "authority": "EPSG",
+          "code": 8606
+        }
+      },
+      {
+        "name": "Z-axis translation",
+        "value": 405.346,
+        "unit": "metre",
+        "id": {
+          "authority": "EPSG",
+          "code": 8607
+        }
+      }
+    ],
+    "id": {
+      "authority": "EPSG",
+      "code": 1676
+    }
+  }
+}

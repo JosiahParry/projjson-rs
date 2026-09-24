@@ -1,0 +1,9 @@
+{
+  "$schema": "foo",
+  "type": "Axis",
+  "name": "Longitude",
+  "abbreviation": "lon",
+  "direction": "east",
+  "unit": "degree",
+  "range_meaning": 1
+}

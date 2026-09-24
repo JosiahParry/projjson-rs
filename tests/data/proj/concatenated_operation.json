@@ -1,0 +1,423 @@
+{
+  "$schema": "foo",
+  "type": "ConcatenatedOperation",
+  "name": "Inverse of Vicgrid + GDA94 to GDA2020 (1)",
+  "source_crs": {
+    "type": "ProjectedCRS",
+    "name": "GDA94 / Vicgrid",
+    "base_crs": {
+      "type": "GeographicCRS",
+      "name": "GDA94",
+      "datum": {
+        "type": "GeodeticReferenceFrame",
+        "name": "Geocentric Datum of Australia 1994",
+        "ellipsoid": {
+          "name": "GRS 1980",
+          "semi_major_axis": 6378137,
+          "inverse_flattening": 298.257222101
+        }
+      },
+      "coordinate_system": {
+        "subtype": "ellipsoidal",
+        "axis": [
+          {
+            "name": "Geodetic latitude",
+            "abbreviation": "Lat",
+            "direction": "north",
+            "unit": "degree"
+          },
+          {
+            "name": "Geodetic longitude",
+            "abbreviation": "Lon",
+            "direction": "east",
+            "unit": "degree"
+          }
+        ]
+      },
+      "id": {
+        "authority": "EPSG",
+        "code": 4283
+      }
+    },
+    "conversion": {
+      "name": "Vicgrid",
+      "method": {
+        "name": "Lambert Conic Conformal (2SP)",
+        "id": {
+          "authority": "EPSG",
+          "code": 9802
+        }
+      },
+      "parameters": [
+        {
+          "name": "Latitude of false origin",
+          "value": -37,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8821
+          }
+        },
+        {
+          "name": "Longitude of false origin",
+          "value": 145,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8822
+          }
+        },
+        {
+          "name": "Latitude of 1st standard parallel",
+          "value": -36,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8823
+          }
+        },
+        {
+          "name": "Latitude of 2nd standard parallel",
+          "value": -38,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8824
+          }
+        },
+        {
+          "name": "Easting at false origin",
+          "value": 2500000,
+          "unit": "metre",
+          "id": {
+            "authority": "EPSG",
+            "code": 8826
+          }
+        },
+        {
+          "name": "Northing at false origin",
+          "value": 2500000,
+          "unit": "metre",
+          "id": {
+            "authority": "EPSG",
+            "code": 8827
+          }
+        }
+      ]
+    },
+    "coordinate_system": {
+      "subtype": "Cartesian",
+      "axis": [
+        {
+          "name": "Easting",
+          "abbreviation": "E",
+          "direction": "east",
+          "unit": "metre"
+        },
+        {
+          "name": "Northing",
+          "abbreviation": "N",
+          "direction": "north",
+          "unit": "metre"
+        }
+      ]
+    },
+    "id": {
+      "authority": "EPSG",
+      "code": 3111
+    }
+  },
+  "target_crs": {
+    "type": "GeographicCRS",
+    "name": "GDA2020",
+    "datum": {
+      "type": "GeodeticReferenceFrame",
+      "name": "Geocentric Datum of Australia 2020",
+      "ellipsoid": {
+        "name": "GRS 1980",
+        "semi_major_axis": 6378137,
+        "inverse_flattening": 298.257222101
+      }
+    },
+    "coordinate_system": {
+      "subtype": "ellipsoidal",
+      "axis": [
+        {
+          "name": "Geodetic latitude",
+          "abbreviation": "Lat",
+          "direction": "north",
+          "unit": "degree"
+        },
+        {
+          "name": "Geodetic longitude",
+          "abbreviation": "Lon",
+          "direction": "east",
+          "unit": "degree"
+        }
+      ]
+    },
+    "id": {
+      "authority": "EPSG",
+      "code": 7844
+    }
+  },
+  "steps": [
+    {
+      "type": "Conversion",
+      "name": "Inverse of Vicgrid",
+      "method": {
+        "name": "Inverse of Lambert Conic Conformal (2SP)",
+        "id": {
+          "authority": "INVERSE(EPSG)",
+          "code": 9802
+        }
+      },
+      "parameters": [
+        {
+          "name": "Latitude of false origin",
+          "value": -37,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8821
+          }
+        },
+        {
+          "name": "Longitude of false origin",
+          "value": 145,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8822
+          }
+        },
+        {
+          "name": "Latitude of 1st standard parallel",
+          "value": -36,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8823
+          }
+        },
+        {
+          "name": "Latitude of 2nd standard parallel",
+          "value": -38,
+          "unit": "degree",
+          "id": {
+            "authority": "EPSG",
+            "code": 8824
+          }
+        },
+        {
+          "name": "Easting at false origin",
+          "value": 2500000,
+          "unit": "metre",
+          "id": {
+            "authority": "EPSG",
+            "code": 8826
+          }
+        },
+        {
+          "name": "Northing at false origin",
+          "value": 2500000,
+          "unit": "metre",
+          "id": {
+            "authority": "EPSG",
+            "code": 8827
+          }
+        }
+      ],
+      "id": {
+        "authority": "INVERSE(EPSG)",
+        "code": 17361
+      }
+    },
+    {
+      "type": "Transformation",
+      "name": "GDA94 to GDA2020 (1)",
+      "source_crs": {
+        "type": "GeographicCRS",
+        "name": "GDA94",
+        "datum": {
+          "type": "GeodeticReferenceFrame",
+          "name": "Geocentric Datum of Australia 1994",
+          "ellipsoid": {
+            "name": "GRS 1980",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257222101
+          }
+        },
+        "coordinate_system": {
+          "subtype": "ellipsoidal",
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "abbreviation": "Lat",
+              "direction": "north",
+              "unit": "degree"
+            },
+            {
+              "name": "Geodetic longitude",
+              "abbreviation": "Lon",
+              "direction": "east",
+              "unit": "degree"
+            }
+          ]
+        },
+        "id": {
+          "authority": "EPSG",
+          "code": 4283
+        }
+      },
+      "target_crs": {
+        "type": "GeographicCRS",
+        "name": "GDA2020",
+        "datum": {
+          "type": "GeodeticReferenceFrame",
+          "name": "Geocentric Datum of Australia 2020",
+          "ellipsoid": {
+            "name": "GRS 1980",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257222101
+          }
+        },
+        "coordinate_system": {
+          "subtype": "ellipsoidal",
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "abbreviation": "Lat",
+              "direction": "north",
+              "unit": "degree"
+            },
+            {
+              "name": "Geodetic longitude",
+              "abbreviation": "Lon",
+              "direction": "east",
+              "unit": "degree"
+            }
+          ]
+        },
+        "id": {
+          "authority": "EPSG",
+          "code": 7844
+        }
+      },
+      "method": {
+        "name": "Coordinate Frame rotation (geog2D domain)",
+        "id": {
+          "authority": "EPSG",
+          "code": 9607
+        }
+      },
+      "parameters": [
+        {
+          "name": "X-axis translation",
+          "value": 61.55,
+          "unit": {
+            "type": "LinearUnit",
+            "name": "millimetre",
+            "conversion_factor": 0.001
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8605
+          }
+        },
+        {
+          "name": "Y-axis translation",
+          "value": -10.87,
+          "unit": {
+            "type": "LinearUnit",
+            "name": "millimetre",
+            "conversion_factor": 0.001
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8606
+          }
+        },
+        {
+          "name": "Z-axis translation",
+          "value": -40.19,
+          "unit": {
+            "type": "LinearUnit",
+            "name": "millimetre",
+            "conversion_factor": 0.001
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8607
+          }
+        },
+        {
+          "name": "X-axis rotation",
+          "value": -39.4924,
+          "unit": {
+            "type": "AngularUnit",
+            "name": "milliarc-second",
+            "conversion_factor": 4.84813681109536e-09
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8608
+          }
+        },
+        {
+          "name": "Y-axis rotation",
+          "value": -32.7221,
+          "unit": {
+            "type": "AngularUnit",
+            "name": "milliarc-second",
+            "conversion_factor": 4.84813681109536e-09
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8609
+          }
+        },
+        {
+          "name": "Z-axis rotation",
+          "value": -32.8979,
+          "unit": {
+            "type": "AngularUnit",
+            "name": "milliarc-second",
+            "conversion_factor": 4.84813681109536e-09
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8610
+          }
+        },
+        {
+          "name": "Scale difference",
+          "value": -9.994,
+          "unit": {
+            "type": "ScaleUnit",
+            "name": "parts per billion",
+            "conversion_factor": 1e-09
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 8611
+          }
+        }
+      ],
+      "accuracy": "0.01",
+      "id": {
+        "authority": "EPSG",
+        "code": 8048
+      },
+      "remarks": "remarks"
+    }
+  ],
+  "accuracy": "0.02",
+  "area": "Australia - GDA",
+  "bbox": {
+    "south_latitude": -60.56,
+    "west_longitude": 93.41,
+    "north_latitude": -8.47,
+    "east_longitude": 173.35
+  }
+}

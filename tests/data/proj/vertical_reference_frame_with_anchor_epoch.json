@@ -1,0 +1,7 @@
+{
+  "$schema": "foo",
+  "type": "VerticalReferenceFrame",
+  "name": "my_name",
+  "anchor": "my_anchor_definition",
+  "anchor_epoch": 0
+}

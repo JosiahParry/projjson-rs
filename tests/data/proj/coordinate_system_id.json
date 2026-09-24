@@ -1,0 +1,23 @@
+{
+  "$schema": "foo",
+  "type": "CoordinateSystem",
+  "subtype": "ellipsoidal",
+  "axis": [
+    {
+      "name": "Geodetic latitude",
+      "abbreviation": "Lat",
+      "direction": "north",
+      "unit": "degree"
+    },
+    {
+      "name": "Geodetic longitude",
+      "abbreviation": "Lon",
+      "direction": "east",
+      "unit": "degree"
+    }
+  ],
+  "id": {
+    "authority": "EPSG",
+    "code": 6422
+  }
+}

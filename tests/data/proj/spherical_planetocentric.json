@@ -1,0 +1,41 @@
+{
+  "$schema": "foo",
+  "type": "GeodeticCRS",
+  "name": "Mercury (2015) / Ocentric",
+  "datum": {
+    "type": "GeodeticReferenceFrame",
+    "name": "Mercury (2015)",
+    "anchor": "Hun Kal: 20.0",
+    "ellipsoid": {
+      "name": "Mercury (2015)",
+      "semi_major_axis": 2440530,
+      "inverse_flattening": 1075.12334801762
+    },
+    "prime_meridian": {
+      "name": "Reference Meridian",
+      "longitude": 0
+    }
+  },
+  "coordinate_system": {
+    "subtype": "spherical",
+    "axis": [
+      {
+        "name": "Planetocentric latitude",
+        "abbreviation": "U",
+        "direction": "north",
+        "unit": "degree"
+      },
+      {
+        "name": "Planetocentric longitude",
+        "abbreviation": "V",
+        "direction": "east",
+        "unit": "degree"
+      }
+    ]
+  },
+  "id": {
+    "authority": "IAU",
+    "code": 19902
+  },
+  "remarks": "Source of IAU Coordinate systems: doi://10.1007/s10569-017-9805-5"
+}

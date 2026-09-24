@@ -1,0 +1,68 @@
+{
+  "$schema": "foo",
+  "type": "DerivedVerticalCRS",
+  "name": "Derived vertCRS",
+  "base_crs": {
+    "type": "VerticalCRS",
+    "name": "ODN height",
+    "datum": {
+      "type": "VerticalReferenceFrame",
+      "name": "Ordnance Datum Newlyn",
+      "id": {
+        "authority": "EPSG",
+        "code": 5101
+      }
+    },
+    "coordinate_system": {
+      "subtype": "vertical",
+      "axis": [
+        {
+          "name": "Gravity-related height",
+          "abbreviation": "H",
+          "direction": "up",
+          "unit": "metre"
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "name": "Conv Vertical Offset and Slope",
+    "method": {
+      "name": "Vertical Offset and Slope",
+      "id": {
+        "authority": "EPSG",
+        "code": 1046
+      }
+    },
+    "parameters": [
+      {
+        "name": "Ordinate 1 of evaluation point",
+        "value": 40.5,
+        "unit": "degree",
+        "id": {
+          "authority": "EPSG",
+          "code": 8617
+        }
+      },
+      {
+        "name": "EPSG code for Horizontal CRS",
+        "value": 4277,
+        "id": {
+          "authority": "EPSG",
+          "code": 1037
+        }
+      }
+    ]
+  },
+  "coordinate_system": {
+    "subtype": "vertical",
+    "axis": [
+      {
+        "name": "Gravity-related height",
+        "abbreviation": "H",
+        "direction": "up",
+        "unit": "metre"
+      }
+    ]
+  }
+}

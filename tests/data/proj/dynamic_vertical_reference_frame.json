@@ -1,0 +1,6 @@
+{
+  "$schema": "foo",
+  "type": "DynamicVerticalReferenceFrame",
+  "name": "bar",
+  "frame_reference_epoch": 1
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "foo",
+  "type": "Axis",
+  "name": "Northing",
+  "abbreviation": "N",
+  "direction": "south",
+  "meridian": {
+    "longitude": {
+      "value": 200,
+      "unit": {
+        "type": "AngularUnit",
+        "name": "grad",
+        "conversion_factor": 0.0157079632679489
+      }
+    }
+  },
+  "unit": "metre"
+}

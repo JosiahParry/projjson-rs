@@ -1,0 +1,55 @@
+{
+  "$schema": "foo",
+  "type": "DerivedParametricCRS",
+  "name": "Derived ParametricCRS",
+  "base_crs": {
+    "type": "ParametricCRS",
+    "name": "Parametric CRS",
+    "datum": {
+      "name": "Parametric datum"
+    },
+    "coordinate_system": {
+      "subtype": "parametric",
+      "axis": [
+        {
+          "name": "unknown parametric",
+          "abbreviation": "",
+          "direction": "unspecified",
+          "unit": {
+            "type": "ParametricUnit",
+            "name": "unknown",
+            "conversion_factor": 1
+          }
+        }
+      ]
+    }
+  },
+  "conversion": {
+    "name": "unnamed",
+    "method": {
+      "name": "PROJ unimplemented"
+    },
+    "parameters": [
+      {
+        "name": "foo",
+        "value": 1,
+        "unit": "metre"
+      }
+    ]
+  },
+  "coordinate_system": {
+    "subtype": "parametric",
+    "axis": [
+      {
+        "name": "Pressure",
+        "abbreviation": "hPa",
+        "direction": "up",
+        "unit": {
+          "type": "ParametricUnit",
+          "name": "HectoPascal",
+          "conversion_factor": 100
+        }
+      }
+    ]
+  }
+}

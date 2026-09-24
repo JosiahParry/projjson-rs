@@ -1,0 +1,63 @@
+{
+  "$schema": "foo",
+  "type": "VerticalCRS",
+  "name": "foo",
+  "datum": {
+    "type": "VerticalReferenceFrame",
+    "name": "bar"
+  },
+  "coordinate_system": {
+    "subtype": "vertical",
+    "axis": [
+      {
+        "name": "Gravity-related height",
+        "abbreviation": "H",
+        "direction": "up",
+        "unit": "metre"
+      }
+    ]
+  },
+  "geoid_model": {
+    "name": "baz",
+    "interpolation_crs": {
+      "type": "GeographicCRS",
+      "name": "NAD83(2011)",
+      "datum": {
+        "type": "GeodeticReferenceFrame",
+        "name": "NAD83 (National Spatial Reference System 2011)",
+        "ellipsoid": {
+          "name": "GRS 1980",
+          "semi_major_axis": 6378137,
+          "inverse_flattening": 298.257222101
+        }
+      },
+      "coordinate_system": {
+        "subtype": "ellipsoidal",
+        "axis": [
+          {
+            "name": "Geodetic latitude",
+            "abbreviation": "Lat",
+            "direction": "north",
+            "unit": "degree"
+          },
+          {
+            "name": "Geodetic longitude",
+            "abbreviation": "Lon",
+            "direction": "east",
+            "unit": "degree"
+          },
+          {
+            "name": "Ellipsoidal height",
+            "abbreviation": "h",
+            "direction": "up",
+            "unit": "metre"
+          }
+        ]
+      },
+      "id": {
+        "authority": "EPSG",
+        "code": 6319
+      }
+    }
+  }
+}

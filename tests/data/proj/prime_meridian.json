@@ -1,0 +1,13 @@
+{
+  "$schema": "foo",
+  "type": "PrimeMeridian",
+  "name": "Paris",
+  "longitude": {
+    "value": 2.5969213,
+    "unit": {
+      "type": "AngularUnit",
+      "name": "grad",
+      "conversion_factor": 0.0157079632679489
+    }
+  }
+}

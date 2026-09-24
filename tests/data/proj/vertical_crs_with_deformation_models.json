@@ -1,0 +1,26 @@
+{
+  "$schema": "foo",
+  "type": "VerticalCRS",
+  "name": "test",
+  "datum": {
+    "type": "DynamicVerticalReferenceFrame",
+    "name": "test",
+    "frame_reference_epoch": 2005
+  },
+  "coordinate_system": {
+    "subtype": "vertical",
+    "axis": [
+      {
+        "name": "Gravity-related height",
+        "abbreviation": "H",
+        "direction": "up",
+        "unit": "metre"
+      }
+    ]
+  },
+  "deformation_models": [
+    {
+      "name": "my_model"
+    }
+  ]
+}
