@@ -1,6 +1,6 @@
 [package]
 name = "projjson"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
 authors = ["Josiah Parry <josiah@ricochet.rs>"]
@@ -11,6 +11,7 @@ documentation = "https://docs.rs/projjson"
 readme = "README.md"
 keywords = ["projjson", "proj", "crs", "gis", "geospatial"]
 categories = ["science::geo", "parser-implementations", "encoding"]
+include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
 
 [dependencies]
 num-traits = { version = "0.2.19", default-features = false }
